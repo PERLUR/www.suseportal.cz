@@ -36,15 +36,17 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/buefy
-    [ 'nuxt-buefy', {
-        css: false,
-      }
-    ],
+    'nuxt-buefy',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content'
   ],
+
+  // Buefy module configuration
+  buefy: {
+    css: false
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
