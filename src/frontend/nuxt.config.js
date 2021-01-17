@@ -41,10 +41,11 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    [ '@nuxtjs/google-analytics',
+    [
+      '@nuxtjs/google-analytics',
       {
-        id: "UA-113467444-4",
-      },
+        id: 'UA-113467444-4'
+      }
     ],
     '@nuxtjs/sitemap'
   ],
@@ -62,8 +63,8 @@ export default {
 
   // Sitemap module configuration
   sitemap: {
-    hostname: "https://www.suseportal.cz/",
-    gzip: true,
+    hostname: 'https://www.suseportal.cz/',
+    gzip: true
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
