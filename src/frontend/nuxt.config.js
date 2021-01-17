@@ -40,7 +40,13 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    [ '@nuxtjs/google-analytics',
+      {
+        id: "UA-113467444-4",
+      },
+    ],
+    '@nuxtjs/sitemap'
   ],
 
   // Buefy module configuration
@@ -53,6 +59,12 @@ export default {
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
+
+  // Sitemap module configuration
+  sitemap: {
+    hostname: "https://www.suseportal.cz/",
+    gzip: true,
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
